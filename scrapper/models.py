@@ -11,5 +11,5 @@ class Article(models.Model):
 	title = models.TextField()
 	link = models.TextField()
 	content = models.TextField()
-	publication_date = models.DateField(auto_now=True)
+	publication_date = models.CharField(max_length=100)
 	author = models.ForeignKey(Author)
